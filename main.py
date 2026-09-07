@@ -63,6 +63,11 @@ while opcao != "0":
 
     elif opcao == "4":
         print("Você escolheu Excluir Tarefa")
+        numero = int(input("Qual tarefa você quer Excluir? "))
+        indice = numero - 1
+
+        tarefas.pop(indice)
+
     elif opcao == "0":
         print("Você escolheu Sair")
     else:
